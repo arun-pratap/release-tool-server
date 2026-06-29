@@ -1,6 +1,6 @@
 - **FRONTEND LIVE URL** : https://my-trip-static.netlify.app/
-- **API ENDPOINTS** : https://release-tools-server.netlify.app/api/
-
+- **API ENDPOINT** : https://release-tools-server.netlify.app/api/releases
+- **LOOM VIDEO URL** : https://www.loom.com/share/50fc08c048df4f2eae7e18b21af89a99
 
 ## 1. POST: Create a New Release (Planned)
 

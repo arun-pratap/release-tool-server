@@ -11,7 +11,7 @@ class ReleaseRepository {
   }
 
   async create(name, dueDate, additionalInfo) {
-    const result = await sql`
+    const result =  sql`
       INSERT INTO releases (name, due_date, additional_info, completed_steps) 
       VALUES (${name}, ${dueDate}, ${additionalInfo || ''}, ${[]}) 
       RETURNING *
