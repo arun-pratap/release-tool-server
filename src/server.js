@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const serverless = require("serverless-http");
+const endPoints = require("./controllers/endpoints.controller")
 const releaseRoutes = require("./routes/release.routes");
 const sql = require("./config/db");
 require("dotenv").config();
@@ -10,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/api", endPoints);
 // Routes Mounting
 app.use("/api/releases", releaseRoutes);
 
